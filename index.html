@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incredible India</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="hero" id="home">
+    <video id="bg-video" autoplay muted>
+      <source src="insight.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+   
+    <header class="top-nav">
+      <div class="logo">
+        <img src="logo morrr.png" alt="Incredible India Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Plan your trip</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <i class="fas fa-search"></i>
+        <a href="login.html" class="login-btn">Login <i class="fas fa-user-circle"></i></a>
+
+      </div>
+    </header>
+
+    
+    <footer class="bottom-nav">
+      <ul class="bottom-links">
+        <li data-index="0" class="active"><span>INSIGHTS</span></li>
+        <li><span>|</span></li>
+        <li data-index="1"><span>FESTIVALS</span></li>
+        <li><span>|</span></li>
+        <li data-index="2"><span>FOODS</span></li>
+        <li><span>|</span></li>
+        <li data-index="3"><span>DANCE</span></li>
+        <li><span>|</span></li>
+        <li data-index="4"><span>MUSIC</span></li>
+      </ul>
+      <div class="controls">
+        <i id="prev-btn" class="fas fa-arrow-left"></i>
+        <i id="next-btn" class="fas fa-arrow-right"></i>
+
+        
+      </div>
+    </footer>
+
+    <section class="destinations" id="destinations">
+  <div class="overlay"></div>
+
+  <!-- Info icon and description -->
+  <div class="destination-info">
+    <div class="info-icon" title="About this destination">
+      <i class="fas fa-info-circle"></i>
+    </div>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Euismod diam aliquam</strong> turpis mattis.</p>
+  </div>
+
+  <!-- Title -->
+  <div class="destination-title" style="margin: 50px;">
+    <h1 style="width: 50%; transform: translateX(50%);">DESTINATIONS</h1>
+    <h3>FOR EVERY BUCKETLIST</h3>
+  </div>
+
+  <!-- Destination switching (arrows + name) -->
+  <div class="destination-footer">
+    <i class="fas fa-arrow-left" id="prevDest"></i>
+    <h2 id="stateName">DELHI</h2>
+    <i class="fas fa-arrow-right" id="nextDest"></i>
+  </div>
+
+  <!-- CTA Button -->
+  <button class="cta">DISCOVER MORE</button>
+</section>
+
+
+<!-- ATTRACTIONS SECTION -->
+<section class="attractions" id="attractions">
+  <div class="attractions-header">
+    <h1>ATTRACTIONS</h1>
+    <p>worth a thousand stories</p>
+  </div>
+
+  <div class="attraction-cards">
+    <div class="card">
+      <img src="delhi.png" alt="Attraction 1" />
+      <div class="card-text">
+        <h3>Red Fort</h3>
+        <p>Historic Mughal architecture in Delhi.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="sanchi stupa.jpeg" alt="Attraction 2" />
+      <div class="card-text">
+        <h3>Sanchi Stupa</h3>
+        <p>Ancient Buddhist monument in Madhya Pradesh.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="vivekananda.jpeg" alt="Attraction 3" />
+      <div class="card-text">
+        <h3>Vivekananda Statue</h3>
+        <p>Iconic spiritual landmark in Raipur.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="lake side.jpeg" alt="Attraction 4" />
+      <div class="card-text">
+        <h3>Lakeside View</h3>
+        <p>Peaceful getaway surrounded by nature.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="attract-cta">DISCOVER MORE</button>
+</section>
+<!-- TRAVEL DIARIES SECTION -->
+<section class="travel-diaries" id="travel-diaries">
+  <div class="diaries-header">
+    <h1>TRAVEL DIARIES</h1>
+    <p>for every passion</p>
+  </div>
+
+  <div class="filters">
+    <select class="filter-dropdown">
+      <option>Interests</option>
+      <option>Adventure</option>
+      <option>Culture</option>
+      <option>Nature</option>
+    </select>
+
+    <select class="filter-dropdown">
+      <option>Regions</option>
+      <option>North</option>
+      <option>South</option>
+      <option>East</option>
+      <option>West</option>
+    </select>
+  </div>
+
+  <div class="diary-cards">
+    <div class="diary-card">
+      <img src="sunrise.jpeg" alt="Travel 1">
+      <div class="diary-info">
+        <h3>Sunrise in Meghalaya</h3>
+        <p>Mist-filled mornings over the eastern hills.</p>
+      </div>
+    </div>
+
+    <div class="diary-card">
+      <img src="trainn.jpg" alt="Travel 2">
+      <div class="diary-info">
+        <h3>Luxury Train Journey</h3>
+        <p>Royal ride across Indian heritage tracks.</p>
+      </div>
+    </div>
+
+    <div class="diary-card">
+      <img src="tropical escape.jpg" alt="Travel 3">
+      <div class="diary-info">
+        <h3>Tropical Escape</h3>
+        <p>Explore the serene beaches of Lakshadweep.</p>
+      </div>
+    </div>
+
+    <div class="diary-card">
+      <img src="water sports.jpeg" alt="Travel 4">
+      <div class="diary-info">
+        <h3>Water Sports</h3>
+        <p>Adventure activities at Visakhapatnam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="crafts-section">
+  <div class="crafts-header">
+    <h1>EXQUISITE CRAFTS</h1>
+    <h3>of timeless tradition</h3>
+  </div>
+
+  <div class="crafts-grid">
+    <div class="craft-card">
+      <img src="karimnagar.jpeg" alt="Silver Filigree" />
+      <p class="state">Telangana</p>
+      <h4>Silver Filigree of Karimnagar</h4>
+    </div>
+    <div class="craft-card">
+      <img src="zardozi.jpg" alt="Zardozi" />
+      <p class="state">Uttar Pradesh</p>
+      <h4>Zardozi Embroidery</h4>
+    </div>
+    <div class="craft-card">
+      <img src="aipan.jpg" alt="Aipan" />
+      <p class="state">Uttarakhand</p>
+      <h4>Aipan</h4>
+    </div>
+    <div class="craft-card">
+      <img src="santipore.jpg" alt="Santipore Saree" />
+      <p class="state">West Bengal</p>
+      <h4>Santipore Saree</h4>
+
+
+    </div>
+  </div>
+
+  <button class="crafts-btn">Discover More</button>
+</section>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Futuristic Indian Flag Animation ===== */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #ff9933, #ffffff, #138808);
+  background-size: 600% 600%;
+  animation: gradientFlow 10s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== Glassmorphic Login Box ===== */
+.login-container {
+  background: rgba(54, 51, 51, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* ===== Inputs ===== */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(8, 0, 0, 0.27);
+  color: white;
+  font-size: 16px;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== Button ===== */
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
+  background-size: 300% 300%;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: gradientFlow 3s ease infinite;
+}
+
+/* ===== Signup Link ===== */
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.signup-link a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

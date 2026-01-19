@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Incredible India</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="title">Create Account</h1>
+    <form onsubmit="goHome(event)">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+      <p class="signup-link">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+
+  <script>
+    function goHome(e) {
+      e.preventDefault();
+      window.location.href = "index.html"; // main home screen
+    }
+  </script>
+</body>
+</html>
